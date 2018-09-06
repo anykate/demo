@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Custom Login Application by Aniket Aryamane">
+    <meta name="author" content="Aniket Aryamane">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="apple-touch-icon" href="">
+    {% load static %}
+
+    <!-- Link to Bootstrap CSS file -->
+    <link rel="stylesheet" href="{% static 'myaccounts/css/vendor/bootstrap/bootstrap.min.css' %}" type="text/css">
+
+    <!-- Link to Materialize CSS file -->
+    <!-- <link rel="stylesheet" href="{% static 'myaccounts/css/vendor/materialize/materialize.min.css' %}" type="text/css"> -->
+
+    <!-- Link to your favicon.ico file -->
+    <link rel="shortcut icon" href="{% static 'myaccounts/img/favicon.ico' %}" type="image/x-icon">
+
+    <!-- Link to your css file -->
+    <link rel="stylesheet" href="{% static 'myaccounts/css/main.css' %}" type="text/css">
+
+</head>
+
+<body>
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+
+<!-- Link to Materialize JS file -->
+<!-- <script src="{% static 'myaccounts/js/vendor/materialize/materialize.min.js' %}"></script> -->
+
+<!-- JQuery comes first in the list -->
+<script src="{% static 'myaccounts/js/vendor/bootstrap/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'myaccounts/js/vendor/bootstrap/popper.min.js' %}"></script>
+<script src="{% static 'myaccounts/js/vendor/bootstrap/bootstrap.min.js' %}"></script>
+
+<!-- Link to your js file -->
+<script src="{% static 'myaccounts/js/main.js' %}"></script>
+</body>
+
+</html>

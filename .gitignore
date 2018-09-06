@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+.atom/
+__pycache__/
+migrations/
+*.pyc
+*.sqlite3

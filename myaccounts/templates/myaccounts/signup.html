@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    MyAccounts | Register
+{% endblock %}
+
+{% block content %}
+    <div class="font-weight-normal text-center mt-5">
+        <h2 class="font-weight-normal">Please sign up...</h2>
+        <img src="https://via.placeholder.com/80x80" alt="" class="mt-1"/>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5" style="height: 350px;">
+        <form action="{% url 'myaccounts:signup' %}" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-lg btn-primary mt-4" style="width: 100%;"
+                   value="Sign up"/>
+            <p class="mt-2 text-muted text-center">&copy; 2017-2018</p>
+        </form>
+    </div>
+{% endblock %}
